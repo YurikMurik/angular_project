@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { CourseItem } from './course-list/interfaces';
-import { fakeVideoList } from '../shared/mockedData';
+import { Component } from '@angular/core';
+import { fakeVideoList } from '../core/mocks/mockedData';
+import { ICourseItemInfo } from '../core/models';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.less']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
 
-  constructor() { }
-
-  ngOnInit(): void { }
-
-  public courses: CourseItem[] = fakeVideoList;
-  
-  
+  public courses: ICourseItemInfo[] = fakeVideoList;
 }

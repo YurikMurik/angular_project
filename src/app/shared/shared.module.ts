@@ -5,8 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderLoginComponent } from './header/header-login/header-login.component';
 import { HeaderLogoComponent } from './header/header-logo/header-logo.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,

@@ -1,4 +1,6 @@
-export const fakeVideoList = [
+import { ICourseItemInfo } from '../models';
+
+export const fakeVideoList: ICourseItemInfo[] = [
     {
       id: 1,
       title: 'video_1',
@@ -20,4 +22,4 @@ export const fakeVideoList = [
       durationTime: '120',
       description: 'description of 3st video'
     }
-]
+];

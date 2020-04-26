@@ -6,8 +6,6 @@ import { ToolboxComponent } from './toolbox/toolbox.component';
 import { SearchComponent } from './toolbox/search/search.component';
 import { AddCourseComponent } from './toolbox/add-course/add-course.component';
 
-
-
 @NgModule({
   declarations: [
     HomePageComponent,

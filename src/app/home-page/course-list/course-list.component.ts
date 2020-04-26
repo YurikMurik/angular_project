@@ -1,19 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { CourseItem } from './interfaces';
-
+import { Component, Input } from '@angular/core';
+import { ICourseItemInfo } from 'src/app/core/models';
 
 @Component({
   selector: 'app-course-list',
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.less']
 })
-export class CourseListComponent implements OnInit {
+export class CourseListComponent {
 
-  @Input() courses: CourseItem[] = [];
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  @Input() public courses: ICourseItemInfo[] = [];
 }
